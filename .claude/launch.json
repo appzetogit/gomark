@@ -2,6 +2,16 @@
   "version": "0.0.1",
   "configurations": [
     {
+      "name": "gomark-frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--port", "5174", "--strictPort"],
+      "cwd": "D:/projects/gomark/Frontend",
+      "port": 5174,
+      "env": {
+        "VITE_BACKEND_PROXY_TARGET": "https://gomark.buytogetherindia.com"
+      }
+    },
+    {
       "name": "frontend",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
