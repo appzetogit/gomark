@@ -473,7 +473,7 @@ export default function LocationSelectorOverlay({ isOpen, onClose }) {
         const map = new google.maps.Map(mapContainerRef.current, {
           center: initialLocation,
           zoom: 15,
-          disableDefaultUI: true, // Quick Drop-style clean look
+          disableDefaultUI: true, // GoMark-style clean look
           zoomControl: true,
           mapTypeControl: false,
           streetViewControl: false,

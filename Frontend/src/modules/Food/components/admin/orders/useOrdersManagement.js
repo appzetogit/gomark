@@ -299,7 +299,7 @@ export function useOrdersManagement(orders, statusKey, title) {
         : (order.date || new Date().toLocaleDateString())
 
       const settings = getCachedSettings() || await loadBusinessSettings()
-      const companyName = settings?.companyName || "Quick Drop Food"
+      const companyName = settings?.companyName || "GoMark Food"
       const logoUrl = settings?.logo?.url || quickSpicyLogo
       const logoDataUrl = await imageUrlToDataUrl(logoUrl)
 

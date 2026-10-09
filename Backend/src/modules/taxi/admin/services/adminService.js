@@ -3244,7 +3244,7 @@ export const forgotPassword = async (email) => {
   // Send real email
   await sendEmail({
     to: email,
-    subject: `Password Reset OTP for ${process.env.APP_NAME || 'Quick Drop'}`,
+    subject: `Password Reset OTP for ${process.env.APP_NAME || 'GoMark'}`,
     text: `Your OTP for password reset is: ${otp}. It will expire in 10 minutes.`,
     html: `
       <div style="font-family: sans-serif; padding: 20px; border: 1px solid #eee; border-radius: 10px; max-width: 500px;">
@@ -3256,7 +3256,7 @@ export const forgotPassword = async (email) => {
         </div>
         <p>This OTP is valid for 10 minutes. If you did not request this, please ignore this email.</p>
         <hr style="border: none; border-top: 1px solid #eee; margin: 20px 0;">
-        <p style="font-size: 12px; color: #666;">Regards,<br>Team ${process.env.APP_NAME || 'Quick Drop'}</p>
+        <p style="font-size: 12px; color: #666;">Regards,<br>Team ${process.env.APP_NAME || 'GoMark'}</p>
       </div>
     `,
   });
